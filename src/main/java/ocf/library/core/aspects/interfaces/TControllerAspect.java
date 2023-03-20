@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 public class TControllerAspect {
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	@Pointcut("execution(* ocf.library.core.interfaces.TController.*(..))")
+	@Pointcut("execution(* ocf.library.core.interfaces.TController+.*(..))")
 	public void tControllerPointcut() {
 	};
 
